@@ -16,9 +16,9 @@
 		113DEEB6139149B900FD4B11 /* TreemapKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DEEB4139149B900FD4B11 /* TreemapKitDemoViewController.m */; };
 		113DEEB7139149B900FD4B11 /* TreemapKitDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113DEEB5139149B900FD4B11 /* TreemapKitDemoViewController.xib */; };
 		113DEEB913914BAB00FD4B11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113DEEB813914BAB00FD4B11 /* QuartzCore.framework */; };
-		113DEEBA13914D6600FD4B11 /* TreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DEEAE139148EA00FD4B11 /* TreemapView.m */; };
-		113DEEBB13914D6800FD4B11 /* TreemapViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DEEB0139148EA00FD4B11 /* TreemapViewCell.m */; };
-		113DEEBD1391501D00FD4B11 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 113DEEBC1391501D00FD4B11 /* data.plist */; };
+		1197D6AB139168E700DF5F71 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1197D6AA139168E700DF5F71 /* data.plist */; };
+		1197D6B0139168F500DF5F71 /* TreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1197D6AD139168F500DF5F71 /* TreemapView.m */; };
+		1197D6B1139168F500DF5F71 /* TreemapViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1197D6AF139168F500DF5F71 /* TreemapViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +35,15 @@
 		113DEE981391489100FD4B11 /* TreemapKitDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreemapKitDemoAppDelegate.h; sourceTree = "<group>"; };
 		113DEE991391489100FD4B11 /* TreemapKitDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreemapKitDemoAppDelegate.m; sourceTree = "<group>"; };
 		113DEE9C1391489100FD4B11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		113DEEAD139148EA00FD4B11 /* TreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreemapView.h; sourceTree = "<group>"; };
-		113DEEAE139148EA00FD4B11 /* TreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreemapView.m; sourceTree = "<group>"; };
-		113DEEAF139148EA00FD4B11 /* TreemapViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreemapViewCell.h; sourceTree = "<group>"; };
-		113DEEB0139148EA00FD4B11 /* TreemapViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreemapViewCell.m; sourceTree = "<group>"; };
 		113DEEB3139149B900FD4B11 /* TreemapKitDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreemapKitDemoViewController.h; sourceTree = "<group>"; };
 		113DEEB4139149B900FD4B11 /* TreemapKitDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreemapKitDemoViewController.m; sourceTree = "<group>"; };
 		113DEEB5139149B900FD4B11 /* TreemapKitDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreemapKitDemoViewController.xib; sourceTree = "<group>"; };
 		113DEEB813914BAB00FD4B11 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		113DEEBC1391501D00FD4B11 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = data.plist; path = ../../TreemapDemo/data.plist; sourceTree = "<group>"; };
+		1197D6AA139168E700DF5F71 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = data.plist; sourceTree = "<group>"; };
+		1197D6AC139168F500DF5F71 /* TreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreemapView.h; path = ../../TreemapKitCocoa/TreemapView.h; sourceTree = "<group>"; };
+		1197D6AD139168F500DF5F71 /* TreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreemapView.m; path = ../../TreemapKitCocoa/TreemapView.m; sourceTree = "<group>"; };
+		1197D6AE139168F500DF5F71 /* TreemapViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreemapViewCell.h; path = ../../TreemapKitCocoa/TreemapViewCell.h; sourceTree = "<group>"; };
+		1197D6AF139168F500DF5F71 /* TreemapViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreemapViewCell.m; path = ../../TreemapKitCocoa/TreemapViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +99,12 @@
 		113DEE8C1391489100FD4B11 /* TreemapKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1197D6B31391690A00DF5F71 /* Controllers */,
+				1197D6B2139168FE00DF5F71 /* Views */,
 				113DEEAB139148D300FD4B11 /* TreemapKit */,
 				113DEE981391489100FD4B11 /* TreemapKitDemoAppDelegate.h */,
 				113DEE991391489100FD4B11 /* TreemapKitDemoAppDelegate.m */,
-				113DEE9B1391489100FD4B11 /* MainMenu.xib */,
 				113DEE8D1391489100FD4B11 /* Supporting Files */,
-				113DEEB3139149B900FD4B11 /* TreemapKitDemoViewController.h */,
-				113DEEB4139149B900FD4B11 /* TreemapKitDemoViewController.m */,
-				113DEEB5139149B900FD4B11 /* TreemapKitDemoViewController.xib */,
 			);
 			path = TreemapKitDemo;
 			sourceTree = "<group>";
@@ -114,7 +112,7 @@
 		113DEE8D1391489100FD4B11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				113DEEBC1391501D00FD4B11 /* data.plist */,
+				1197D6AA139168E700DF5F71 /* data.plist */,
 				113DEE8E1391489100FD4B11 /* TreemapKitDemo-Info.plist */,
 				113DEE8F1391489100FD4B11 /* InfoPlist.strings */,
 				113DEE921391489100FD4B11 /* TreemapKitDemo-Prefix.pch */,
@@ -127,12 +125,30 @@
 		113DEEAB139148D300FD4B11 /* TreemapKit */ = {
 			isa = PBXGroup;
 			children = (
-				113DEEAD139148EA00FD4B11 /* TreemapView.h */,
-				113DEEAE139148EA00FD4B11 /* TreemapView.m */,
-				113DEEAF139148EA00FD4B11 /* TreemapViewCell.h */,
-				113DEEB0139148EA00FD4B11 /* TreemapViewCell.m */,
+				1197D6AC139168F500DF5F71 /* TreemapView.h */,
+				1197D6AD139168F500DF5F71 /* TreemapView.m */,
+				1197D6AE139168F500DF5F71 /* TreemapViewCell.h */,
+				1197D6AF139168F500DF5F71 /* TreemapViewCell.m */,
 			);
 			name = TreemapKit;
+			sourceTree = "<group>";
+		};
+		1197D6B2139168FE00DF5F71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				113DEE9B1391489100FD4B11 /* MainMenu.xib */,
+				113DEEB5139149B900FD4B11 /* TreemapKitDemoViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1197D6B31391690A00DF5F71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				113DEEB3139149B900FD4B11 /* TreemapKitDemoViewController.h */,
+				113DEEB4139149B900FD4B11 /* TreemapKitDemoViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +205,7 @@
 				113DEE971391489100FD4B11 /* Credits.rtf in Resources */,
 				113DEE9D1391489100FD4B11 /* MainMenu.xib in Resources */,
 				113DEEB7139149B900FD4B11 /* TreemapKitDemoViewController.xib in Resources */,
-				113DEEBD1391501D00FD4B11 /* data.plist in Resources */,
+				1197D6AB139168E700DF5F71 /* data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,11 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113DEEBA13914D6600FD4B11 /* TreemapView.m in Sources */,
 				113DEE941391489100FD4B11 /* main.m in Sources */,
-				113DEEBB13914D6800FD4B11 /* TreemapViewCell.m in Sources */,
 				113DEE9A1391489100FD4B11 /* TreemapKitDemoAppDelegate.m in Sources */,
 				113DEEB6139149B900FD4B11 /* TreemapKitDemoViewController.m in Sources */,
+				1197D6B0139168F500DF5F71 /* TreemapView.m in Sources */,
+				1197D6B1139168F500DF5F71 /* TreemapViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
