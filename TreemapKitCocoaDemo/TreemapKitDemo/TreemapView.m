@@ -1,3 +1,4 @@
+
 #import "TreemapView.h"
 
 @implementation TreemapView
@@ -20,7 +21,6 @@
             cell.frame = rect;
             if ([delegate respondsToSelector:@selector(treemapView:updateCell:forIndex:forRect:)])
                 [delegate treemapView:self updateCell:cell forIndex:index forRect:rect];
-            [cell layoutSubviews];
         }
         return;
     }
@@ -100,7 +100,7 @@
             bRect = CGRectMake(rect.origin.x, rect.origin.y + aHeight + sep, bWidth, bHeight);
         }
     }
-
+    
     [self calcNodePositions:aRect nodes:aArray width:aWidth height:aHeight depth:depth + 1 withCreate:createNode];
     [self calcNodePositions:bRect nodes:bArray width:bWidth height:bHeight depth:depth + 1 withCreate:createNode];
 }
@@ -143,7 +143,7 @@
 }
 
 - (void)removeNodes {
-    for (UIView *view in self.subviews) {
+    for (NSView *view in self.subviews) {
         [view removeFromSuperview];
     }
 }
@@ -165,22 +165,25 @@
 
 #pragma mark -
 
-- (id)initWithFrame:(CGRect)frame {
-    if ((self = [super initWithFrame:frame])) {
-        initialized = NO;
-		self.backgroundColor = [UIColor grayColor];
-		self.opaque = YES;
-    }
-    return self;
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-
+- (void)setDataSource:(id<TreemapViewDataSource>)dataSourceIn {
+    [dataSourceIn retain];
+    
+    [dataSource release];
+    dataSource = dataSourceIn;
+    
     if (!initialized) {
         [self createNodes];
         initialized = YES;
     }
+}
+
+- (id)initWithFrame:(CGRect)frame {
+    if ((self = [super initWithFrame:frame])) {
+        initialized = NO;
+		//self.backgroundColor = [NSColor grayColor];
+		//self.opaque = YES;
+    }
+    return self;
 }
 
 - (void)dealloc {

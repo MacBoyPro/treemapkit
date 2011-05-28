@@ -1,24 +1,26 @@
-#import <UIKit/UIKit.h>
+
+#import <Cocoa/Cocoa.h>
 
 @protocol TreemapViewCellDelegate;
 
-@interface TreemapViewCell : UIControl {
-	UILabel *valueLabel;
-	UILabel *textLabel;
+@interface TreemapViewCell : NSControl {
+	NSTextField *valueLabel;
+	NSTextField *textLabel;
 
 	NSInteger index;
 
 	id <TreemapViewCellDelegate> delegate;
 }
 
-@property (nonatomic, retain) UILabel *valueLabel;
-@property (nonatomic, retain) UILabel *textLabel;
+@property (nonatomic, retain) NSTextField *valueLabel;
+@property (nonatomic, retain) NSTextField *textLabel;
 
 @property NSInteger index;
 
 @property (nonatomic, retain) id <TreemapViewCellDelegate> delegate;
 
 - (id)initWithFrame:(CGRect)frame;
+- (CGColorRef)CGColorFromColor:(NSColor*)color;
 
 @end
 

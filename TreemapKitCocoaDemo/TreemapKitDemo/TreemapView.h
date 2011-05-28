@@ -1,18 +1,19 @@
-#import <UIKit/UIKit.h>
+
+#import <Cocoa/Cocoa.h>
 #import "TreemapViewCell.h"
 
 @protocol TreemapViewDataSource;
 @protocol TreemapViewDelegate;
 
-@interface TreemapView : UIView <TreemapViewCellDelegate> {
+@interface TreemapView : NSView <TreemapViewCellDelegate> {
     id <TreemapViewDataSource> dataSource;
     id <TreemapViewDelegate> delegate;
 
     BOOL initialized;
 }
 
-@property (nonatomic, retain) id <TreemapViewDataSource> dataSource;
-@property (nonatomic, retain) id <TreemapViewDelegate> delegate;
+@property (nonatomic, retain) IBOutlet id <TreemapViewDataSource> dataSource;
+@property (nonatomic, retain) IBOutlet id <TreemapViewDelegate> delegate;
 
 - (void)reloadData;
 
