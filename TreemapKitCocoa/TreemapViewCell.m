@@ -16,9 +16,11 @@
 - (id)initWithFrame:(CGRect)frame {
 	if ((self = [super initWithFrame:frame])) {
         
-		self.textLabel = [[NSTextField alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.width)];
+		self.textLabel = [[NSTextField alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height/2.0)];
+        
         [textLabel setEditable:NO];
         [textLabel setBordered:NO];
+        [textLabel setAlignment:NSCenterTextAlignment];
 		textLabel.textColor = [NSColor whiteColor];
 		textLabel.backgroundColor = [NSColor clearColor];
 		[self addSubview:textLabel];        
@@ -68,7 +70,7 @@
     
     NSColor *borderColor = [NSColor darkGrayColor];
     
-    NSColor *fillColor = [NSColor colorWithCalibratedHue:(float)index / (arc4random() % 256)
+    NSColor *fillColor = [NSColor colorWithCalibratedHue:(float)index / (arc4random() % 32)
                                               saturation:1 brightness:0.75 alpha:1];
     
     // do the drawing
